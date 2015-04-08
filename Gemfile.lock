@@ -36,6 +36,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    addressable (2.3.8)
     annotate (2.6.8)
       activerecord (>= 3.2, <= 4.3)
       rake (~> 10.4)
@@ -69,6 +70,10 @@ GEM
     hitimes (1.2.2)
     i18n (0.7.0)
     json (1.8.2)
+    launchy (2.4.3)
+      addressable (~> 2.3)
+    letter_opener (1.3.0)
+      launchy (~> 2.2)
     loofah (2.0.1)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -196,6 +201,7 @@ DEPENDENCIES
   annotate (~> 2.6.6)
   clockwork
   devise
+  letter_opener
   pry-meta
   rails (= 4.2.1)
   rspec-rails

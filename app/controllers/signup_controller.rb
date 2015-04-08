@@ -6,6 +6,7 @@ class SignupController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      SignupJob.perform_later(@user.id)
       render text: "Created!"
     else
       render :new

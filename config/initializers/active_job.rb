@@ -1,0 +1,1 @@
+Rails.configuration.active_job.queue_adapter = :sidekiq

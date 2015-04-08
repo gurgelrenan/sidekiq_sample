@@ -18,5 +18,6 @@ end
 
 group :development do
   gem 'annotate', '~> 2.6.6'
+  gem 'letter_opener'
 end
 
