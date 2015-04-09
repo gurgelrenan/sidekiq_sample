@@ -21,7 +21,7 @@ class Signup
   end
 
   def schedule_followup_email
-    Mailer.followup(@user_id).deliver_later(wait: 5.days)
+    Mailer.followup(@user_id).deliver_later(wait: 5.days) 
   end
   
   
